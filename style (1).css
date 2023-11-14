@@ -1,0 +1,299 @@
+body, html{
+    margin: 0;
+    background-color: #dfeded;
+}
+.header{
+    width: 100vw;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    margin-top: 3vh;
+}
+.logo_container{
+    height: 70%;
+    position: relative;
+    top: 50%;
+    transform:translateY(-50%);
+    padding-left: 1vw;
+}
+.logo_img{
+    height: 100%;
+}
+.username_h2{
+    padding-left:65vw;
+    color: black;
+}
+ul {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: black;
+}
+
+
+/* slider */
+.slider{
+    height: 250px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover{
+  animation-play-state:paused;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide{
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+img{
+    width: 100%;
+    transform: transform 1s;
+}
+img:hover{
+  transform: translateZ(20px);
+}
+
+
+
+/* header  */
+
+
+.search_div{
+    margin-left: 20vw;
+    display: flex;
+    width: 80%;
+  }
+  .a_div{
+    margin-left: 30vw;
+    display: flex;
+    align-items: center;
+  }
+  .header_a{
+    color: black;
+    margin-left: 30px;
+    text-decoration: none;
+  }
+  .search_input{
+    padding: 8px;
+   font-weight: bold; 
+  }
+  .card_img_div{
+    margin: 20px auto;
+    width: 60%;
+    height: 60%;
+  }
+  .icon{
+    width: 25px;
+    }
+  .icon1{
+    width:25px;
+    padding-top:16px;
+  }
+  @media (max-width: 767px) {
+    .icon{
+        display: none; 
+    }
+}
+@media (max-width: 767px) {
+  .icon1{
+      display: none; 
+  }
+}
+
+  .card_p_div{
+    width: 80%;
+    height: 25%;
+    font-size: 16px;
+    background-color: rgb(93, 93, 130);
+    margin: 20px;
+    text-align: end;
+    font-weight: bold;
+    
+  }
+.container {
+    width: 80%; 
+    margin: 20px auto;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.link{
+  text-decoration: none;
+    color: black;
+}
+.card {
+  background-color: white;
+    width: 30%; 
+    margin-bottom: 20px;
+}
+  /* footer */
+  @media (max-width: 767px) {
+    .footer{
+      padding: 50px 0 300px; 
+      background-color: #333;
+      position:relative;
+    }
+  }
+.footer{
+  position:relative;
+  margin: 0;
+  padding: 50px 0 220px;
+  background-color: #333;
+  color: white;
+}
+.footer-top{
+    padding-bottom: 70px;
+}
+.col{
+  width: 16.6%;
+  padding: 40px;
+}
+.item{
+  font-size: .867em;
+  font-weight: 700;
+  line-height: 1.5385em;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  padding: 10px;
+}
+.footer-item {
+  color: white;
+  text-decoration: none;
+  display: flex;
+}
+
+.footer-info {
+  font-weight: 400;
+  color: #999;
+  text-decoration: none;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column; 
+  padding: 10px;
+  float: left;
+  margin-left:20px;
+}
+
+.col a {
+  margin-bottom: 10px; 
+}
+
+
+
+
+
+
+
+
+h1{
+  margin-left:30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две колонки равной ширины */
+  gap: 10px; 
+  margin:40px;
+  border: 1px solid #ccc; 
+  padding: 40px; 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* left */
+@media (max-width: 767px) {
+  .grid-container {
+      flex-direction: column; /* Столбцовая ориентация */
+  }
+  .left-side {
+      order: -1; /* Смещаем вниз */
+  }
+}
+.left-side {
+  text-align: center;
+  padding-left:40px;
+}
+
+.main-image{
+  width:500px;
+  flex: 2;
+
+}
+.small-images{
+  width:100px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+/* right */
+.right-side {
+  text-align: center;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:500px;
+  height: 400px;;
+}
+.size-block {
+  text-align: center;
+  margin: 20px;
+}
+.cost{
+  font-weight:700;
+  font-size: 42px;
+}
+.have{
+  color: green;
+  font-size: 20px;
+}
+.size-options span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.size-options span:hover {
+  background-color: #f0f0f0;
+}

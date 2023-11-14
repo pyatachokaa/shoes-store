@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style (1).css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="logo_container">
+        <a href="#"><img class="logo_img" src="img/colorful-bird.avif"></a>
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Servises</a></li>
+    </ul>
+
+    <div class="icons">
+
+    </div>
+    
+    <h2 id="username_h2" class="username_h2">
+
+    </h2>
+</header>
+
+<h1>Jordan</h1>
+<div class="grid-container">
+<!-- left side -->
+<div class="left-side">
+  <div class="shoe-page">
+  <div class="main-image">
+    <img id="main-shoe-image" src="img/jordan-kros.webp" alt="Основное изображение обуви">
+</div>
+<div class="small-images">
+  <img src="img/jordan-kros.webp" alt="Маленькое изображение 1" onclick="changeMainImage(this)">
+    <img src="img/astir-kros.webp" alt="Маленькое изображение 2" onclick="changeMainImage(this)">
+    <img src="img/nb-kros.jpg" alt="Маленькое изображение 2" onclick="changeMainImage(this)">
+    <img src="img/nb-kros.jpg" alt="Маленькое изображение 2" onclick="changeMainImage(this)">
+</div>
+</div>
+
+</div>
+
+<!-- right side -->
+<div class="right-side">
+  <div class="price-block">
+    <div class="cost">40 500тг/парa</div>
+    <div class="have">Есть в наличии:2</div>
+  </div>
+
+  <div class="size-block">
+    <div id="selected-size">Выберите размер:</div>
+    <div class="size-options">
+        <span onclick="changeSize(37)">37</span>
+        <span onclick="changeSize(38)">38</span>
+        <span onclick="changeSize(39)">39</span>
+    </div>
+    <a href="#"><img src="img/heart.png" class="icon" alt=""></a>
+    <a href="#"><img src="img/shopping-cart.png" class="icon" alt=""></a>
+    <a href="#"><img src="img/chat.png" alt="" class="icon"></a>
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer_top">
+
+    <div class="col">
+      <div class="item">
+        <a href="#" class="footer-item">Каталог</a>
+      </div>
+      <div class="item">
+        <a href="#" class="footer-item">Акции</a>
+      </div>
+      <div class="item">
+        <a href="#" class="footer-item">Бренды</a>
+      </div>
+      <div class="item">
+        <a href="#" class="footer-item">новости</a>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="item">
+        <a href="#" class="footer-item">Компания</a>
+      </div>
+      <a href="#" class="footer-info">О компании</a>
+      <a href="#" class="footer-info">Наша команда</a>
+      <a href="#" class="footer-info">Контакты</a>
+    </div>
+
+    <div class="col">
+      <div class="item">
+        <a href="#" class="footer-item">Розничный магазин</a>
+      </div>
+      <a href="#" class="footer-info">Custom</a>
+      <a href="#" class="footer-info">Оплата Kaspi QR</a>
+      <a href="#" class="footer-info">Контакты</a>
+    </div>
+
+    <div class="col">
+      <div class="item">
+        <a href="#" class="footer-item">Помощь покупателю</a>
+      </div>
+      <a href="#" class="footer-info">Частые вопросы по заказам</a>
+      <a href="#" class="footer-info">Доставка и оплата</a>
+      <a href="#" class="footer-info">Обратная связь</a>
+    </div>
+
+    <div class="col">
+      <div class="item">
+        <a href="#" class="footer-item">+7-777-777-77-77</a>
+      </div>
+      <div class="item">
+        <a href="#" class="footer-item">shoes@example.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="jordan.js"></script>
+</body>
+</html>
